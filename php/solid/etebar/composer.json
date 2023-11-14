@@ -1,0 +1,9 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Etebar\\OMS\\Interfaces\\": "Lib/OMS/Interfaces",
+      "Etebar\\OMS\\Rayan\\": "Lib/OMS/Rayan",
+      "Etebar\\OMS\\Tadbir\\": "Lib/OMS/Tadbir"
+    }
+  }
+}

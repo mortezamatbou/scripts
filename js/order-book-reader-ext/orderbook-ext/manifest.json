@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "OrderBook Reader",
+    "version": "1.0",
+    "description": "Read Orderbook from socket connection on binance.com",
+    "icons": {
+        "48": "icons/default-48.png"
+    },
+    "permissions": [
+        "webRequest",
+        "ws://*/*",
+        "wss://*/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.binance.com/*"
+            ],
+            "js": [
+                "orderbook.js"
+            ]
+        }
+    ]
+}
