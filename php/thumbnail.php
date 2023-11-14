@@ -1,6 +1,6 @@
 <?php
 
-private function generate_thumbnail($file)
+function generate_thumbnail($file)
 {
 	$valid_file = preg_match('/\/(\w)+.(jpg|jpeg|png|gif)$/i', strtolower($file));
 	if (!$valid_file || !file_exists('.' . $file)) {
